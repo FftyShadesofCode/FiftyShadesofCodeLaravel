@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SkillsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -30,13 +31,8 @@ Route::get('/dashboard/tables', function () {
     return view('admin/dashboard/tables');
 });
 
-Route::get('/dashboard/layoutstatic', function () {
-    return view('admin/dashboard/layoutstatic');
-});
+Route::resource('skills', SkillsController::class);
 
-Route::get('/dashboard/layoutsidenavlight', function () {
-    return view('admin/dashboard/layoutsidenavlight');
-});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
