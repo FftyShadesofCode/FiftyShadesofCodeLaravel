@@ -1,132 +1,400 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
 
-        <title>Laravel</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Fifty Shades of Code</title>
+    <link rel="stylesheet" href="{{ asset('Frontend/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('Frontend/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('Frontend/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('Frontend/css/templatemo-style.css') }}">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
-        </style>
+    <link href="{{ asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700') }}" rel="stylesheet">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
+<!-- PRE LOADER -->
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
+<div class="preloader">
+    <div class="spinner">
+        <span class="spinner-rotate"></span>
+    </div>
+</div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
+<!-- Navigation Section -->
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+    <div class="container">
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
+        <!-- navbar header -->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="{{ asset('assets/FiftyShadesofCode.png') }}" alt="Fifty Shades of Code text" />
+            </a>
+        </div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home" class="smoothScroll">Home</a></li>
+                <li><a href="#about" class="smoothScroll">About Me</a></li>
+                <li><a href="#experience" class="smoothScroll">Experiences</a></li>
+                <li><a href="#skills" class="smoothScroll">Skills</a></li>
+                <li><a href="#work" class="smoothScroll">Work</a></li>
+                <li><a href="#contact" class="smoothScroll">Contact</a></li>
+            </ul>
+        </div>
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
+    </div>
+</div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
+<!-- Home Section -->
 
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
+<section id="home" class="parallax-section">
+    <div class="container">
+        <div class="row">
 
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
+            <div class="col-md-6 col-sm-6">
+                <div class="home-img"></div>
+            </div>
 
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="home-thumb">
+                    <div class="section-title">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to Fifty Shades of Code</h4>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Philip R. McDavid</strong><br />currently based in Upstate New York.</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.9s">I am a recent bootcamp graduate, making it my 8th degree/certification! I hold degrees/certifications in Floral Design, Photography, Videography, Web Design, Business, Fitness and Nutrition,<br />Graphic Design, and now Full Stack Development, or Software Engineering.</p>
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                        <a href="#skills" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">My Skills</a>
+
+                        <a href="#work" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">My Work</a>
+
                     </div>
                 </div>
             </div>
+
+
         </div>
-    </body>
+    </div>
+</section>
+
+
+<!-- About Section -->
+
+<section id="about" class="parallax-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+                <div class="about-thumb">
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
+                        <h1>About Me</h1>
+                        <p class="color-red">In a nutshell...</p>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                        <p>I have always had a creative side and explored it through different facets as I grew as a person. This has developed into a love for digital design in all forms, so much so, that I pursued degrees and careers doing so.</p>
+                        <p>I love doing things that are unique and creative. I also love to learn. So if I don't know how to do something, it doesn't mean I won't take the job. It means the job will be my stepping stone to learn something new!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="background-image about-img"></div>
+            </div>
+
+            <div class="bg-red col-md-3 col-sm-6">
+                <div class="skill-thumb">
+                    <div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
+                        <p>Full Stack Development</p>
+                        <p>Web Design</p>
+                        <p>Floral design</p>
+                        <p>Photography</p>
+                        <p>Videography</p>
+                        <p>Graphic Design</p>
+                        <p>Business</p>
+                        <p>Social Media and Digital Marketing</p>
+                        <p>Fitness and Nutrition</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Service Section -->
+
+<section id="service" class="parallax-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="bg-red col-md-3 col-sm-6">
+                <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="75" height="75" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path fill="#bfbebe" d="M39.568 47.4H24.251c.357 0 .645 3.511.645 7.836c0 4.328-.287 7.839-.645 7.839h15.317c-.356 0-.645-3.511-.645-7.839c.002-4.325.289-7.836.645-7.836"/><path fill="#aeaeae" d="M29.615 47.4h-5.363c.357 0 .645 3.511.645 7.836c0 4.328-.287 7.839-.645 7.839h5.363c.357 0 .645-3.511.645-7.839c0-4.325-.288-7.836-.645-7.836"/><path fill="#d1d2d2" d="M63.784 47.31c0 4.047-3.05 7.326-6.806 7.326H6.848c-3.76 0-6.809-3.279-6.809-7.326V10.19c0-4.04 3.049-7.321 6.809-7.321h50.13c3.756 0 6.806 3.278 6.806 7.321v37.12"/><path fill="#c6c5c5" d="M12.93 47.31V10.19c0-4.04 3.049-7.321 6.808-7.321H6.844c-3.76 0-6.809 3.278-6.809 7.321v37.12c0 4.047 3.049 7.326 6.809 7.326h12.894c-3.759 0-6.808-3.28-6.808-7.327"/><g fill="#243438"><path d="M63.784 36.941c0 4.04-3.05 7.32-6.806 7.32H6.848c-3.76 0-6.809-3.277-6.809-7.32V10.163c0-4.047 3.049-7.325 6.809-7.325h50.13c3.756 0 6.806 3.278 6.806 7.325v26.778"/><path d="M.036 35.05h63.749v11.367H.036z"/></g><path fill="#58c5e8" d="M58.75 6.244H5.069c-.443 0-.812.245-.812.54v34.891c0 .296.369.54.812.54H58.75c.241 0 .424-.051.557-.141l.02-.02s.016-.012.02-.023a.414.414 0 0 0 .223-.356V6.791c-.004-.295-.377-.54-.82-.54"/><path fill="#28a6de" d="M32.698 29.559c8.976 5.378 17.745 9.04 26.868 11.255V6.784c0-.295-.373-.54-.816-.54H9.49c5.06 9.535 13.768 17.66 23.21 23.315m.07 5.711C21.94 29.371 11.097 21.2 4.257 11.11v30.564c0 .296.369.54.812.54h43.813c-5.352-1.725-10.689-3.986-16.11-6.94"/><path fill="#d1d2d2" d="M43.721 62.727c0 .702-.338 1.273-.753 1.273h-22.11c-.419 0-.757-.571-.757-1.273c0-.703.338-1.273.757-1.273h22.11c.415-.003.753.569.753 1.273"/><path fill="#c6c5c5" d="M27.937 62.727c0-.703.338-1.273.753-1.273h-8.125c-.416 0-.753.57-.753 1.273c0 .702.338 1.273.753 1.273h8.125c-.415 0-.753-.571-.753-1.273"/><path fill="#243438" d="M34.33 48.615c-.098-.094-.241-.121-.436-.065l-1.123.287c-.35.095-.527.326-.527.698l-.004 1.201c0 .174.039.303.117.377a.335.335 0 0 0 .249.093c.06 0 .116-.013.188-.027l1.122-.286c.35-.094.528-.326.532-.703v-1.197c-.003-.177-.042-.304-.118-.378m-.596 1.367c0 .133-.062.215-.189.25l-.398.104a.436.436 0 0 1-.066.008a.138.138 0 0 1-.09-.031c-.026-.025-.043-.072-.038-.14v-.427c0-.133.062-.215.187-.249l.403-.104c.069-.016.121-.008.151.023c.03.027.043.072.043.136v.431h-.003zm-2.154-.452c0-.372-.175-.604-.528-.698l-1.122-.287c-.194-.056-.338-.026-.431.065c-.082.074-.121.201-.121.377l.004 1.195c.004.377.179.61.528.703l1.126.287c.066.02.128.027.182.027a.33.33 0 0 0 .249-.094c.078-.073.117-.201.117-.377l-.004-1.198m-.746.778c-.02.021-.05.031-.089.031c0 0-.043-.004-.066-.008l-.4-.104c-.124-.035-.19-.117-.19-.25v-.431c0-.062.016-.108.042-.136c.031-.031.082-.039.155-.023l.4.104c.124.034.19.116.19.249v.431c0 .062 0 .109-.042.137m1.535 2.301c.02 0 .039-.004.066-.013l.4-.103c.124-.029.19-.115.19-.252v-.426a.236.236 0 0 0-.039-.138c-.035-.034-.09-.038-.155-.021l-.404.103c-.124.031-.187.116-.187.252l-.004.429c0 .062.016.104.043.131c.02.026.051.038.09.038m-.913 0a.209.209 0 0 1-.07-.013l-.4-.103c-.124-.029-.187-.115-.187-.252l-.004-.426c0-.063.016-.105.043-.138c.031-.034.085-.038.151-.021l.408.103c.121.031.187.116.187.252v.429c0 .062-.016.104-.039.131a.114.114 0 0 1-.089.038"/></svg>
+                    <h3>Interface Design</h3>
+                    <p class="color-white">Maximizing usability and the User Experience</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="75" height="75" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="#B9C5C6" d="M305.125 237.641L81.562 368.318l67.566-197.296c6.586-19.231 26.932-34.817 45.45-34.817h290.569c18.518 0 28.189 15.586 21.604 34.817l-67.566 197.296l-134.06-130.677z"/><path fill="#96A9B2" d="M439.388 369.591c-.088.102-.202.173-.295.272c-9.446 13.303-25.008 22.793-39.54 22.793H104.438c-1.107 0-2.043-.27-3.087-.377h-.429c-.107-.014-.176-.074-.282-.088c-6.812-.869-12.169-3.914-15.634-8.616c-.065-.088-.178-.129-.243-.217l.074-.047c-.809-1.133-1.681-2.223-2.269-3.524c-1.377-3.048-2.124-6.53-2.163-10.313c-.011-.03-.03-.052-.034-.085l.041-.027c-.023-3.769 198.015-126.246 198.015-126.246c24.57-15.234 34.783-14.997 49.217 0c0 0 114.346 122.576 111.676 126.397l.068.078z"/><path fill="#DCE2E2" d="M167.814 144.631c5.942-4.166 15.793-7.974 23.306-8.773l297.738-.011c6.984.81 13.209 0 17.315 8.783c4.106 8.783 2.92 13.753 2.92 13.753L314.09 282.712c-24.191 14.999-34.247 14.766-48.458 0L155.609 158.187s6.263-9.39 12.205-13.556z"/><path fill="#FFB636" d="M114.107 203.102H18.109c-8.008 0-14.5-6.492-14.5-14.5s6.492-14.5 14.5-14.5h95.998c8.008 0 14.5 6.492 14.5 14.5s-6.492 14.5-14.5 14.5zm-13.041 48.469c0-8.008-6.492-14.5-14.5-14.5H18.109c-8.008 0-14.5 6.492-14.5 14.5s6.492 14.5 14.5 14.5h68.457c8.009 0 14.5-6.492 14.5-14.5zm-22.205 62.97c0-8.008-6.492-14.5-14.5-14.5H18.109c-8.008 0-14.5 6.492-14.5 14.5s6.492 14.5 14.5 14.5H64.36c8.009 0 14.501-6.492 14.501-14.5z"/></svg>
+                    <h3>Media Strategy</h3>
+                    <p class="color-white">How Messages will be Delivered to the Consumer or Niche Market.</p>
+                </div>
+            </div>
+
+            <div class="bg-dark col-md-3 col-sm-6">
+                <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="75" height="75" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><g fill="#616161"><path d="m29.175 31.99l2.828-2.827l12.019 12.019l-2.828 2.827z"/><circle cx="20" cy="20" r="16"/></g><path fill="#37474F" d="m32.45 35.34l2.827-2.828l8.696 8.696l-2.828 2.828z"/><circle cx="20" cy="20" r="13" fill="#64B5F6"/><path fill="#BBDEFB" d="M26.9 14.2c-1.7-2-4.2-3.2-6.9-3.2s-5.2 1.2-6.9 3.2c-.4.4-.3 1.1.1 1.4c.4.4 1.1.3 1.4-.1C16 13.9 17.9 13 20 13s4 .9 5.4 2.5c.2.2.5.4.8.4c.2 0 .5-.1.6-.2c.4-.4.4-1.1.1-1.5z"/></svg>
+                    <h3>SEO</h3>
+                    <p class="color-white">Targeting Unpaid Traffic Rather Than Direct Traffic or Paid Traffic.</p>
+                </div>
+            </div>
+
+            <div class="bg-white col-md-3 col-sm-6">
+                <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="75" height="75" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke-dasharray="64" stroke-dashoffset="64" stroke-width="2" d="M13 3L19 9V21H5V3H13"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M12.5 3V8.5H19"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="14;0"/></path><g stroke-dasharray="8" stroke-dashoffset="8" stroke-width="2"><path d="M10 13L8 15L10 17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.2s" values="8;0"/></path><path d="M14 13L16 15L14 17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1.2s" dur="0.2s" values="8;0"/></path></g></g></svg>
+                    <h3>Coding</h3>
+                    <p>Write Code/Programs that Determine How We Communicate with Computers</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Experience Section -->
+
+<section id="experience" class="parallax-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                <div class="background-image experience-img"></div>
+            </div>
+
+            <div class="col-md-6 col-sm-6">
+                <div class="color-white experience-thumb">
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                        <h1>My Experiences</h1>
+                        <p class="color-white">Previous companies and my tasks</p>
+                    </div>
+
+                    <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                        <div class="media-object media-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="50" height="50" preserveAspectRatio="xMidYMid meet" viewBox="0 0 128 128"><path fill="#B7D5E5" d="M106 24.79H22.15c-1.92 0-3.48 1.56-3.48 3.48v57.59c0 1.92 1.56 3.48 3.48 3.48H106c1.92 0 3.48-1.56 3.48-3.48V28.27c0-1.92-1.55-3.48-3.48-3.48z"/><radialGradient id="svgIDa" cx="48.408" cy="13.024" r="75.465" gradientTransform="matrix(1 0 0 1.0843 0 -10.19)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2F7889"/><stop offset="1" stop-color="#424242"/></radialGradient><path fill="url(#svgIDa)" d="M104.75 83.2H23.4l.96-52.27h79.43z"/><path fill="#2F7889" d="M121.09 123.82H7.59c-.43 0-.83-.03-1.2-.09c-2.88-.44-4.21-4.18-2.5-6.74l.39-.59h119.59l.4.6c1.86 2.78.12 6.76-3.04 6.81c-.04.01-.09.01-.14.01z"/><path fill="#EEE" d="M106.84 90.41H20.6c-1.27 0-2.54.77-3.25 1.99l-14 25.48c-.59.88-.01 2.12.99 2.12H123.8c1 0 1.58-1.24.99-2.12l-14.71-25.63c-.7-1.08-1.97-1.84-3.24-1.84z"/><path fill="#B7D5E5" d="M86.36 115.52H41.8l2.85-7.98h39.07z"/><path fill="#69A1BA" d="m72.69 94.84l-.27-2.2h-3.44l.13 2.2zm-5.55 0l-.14-2.2h-3.45v2.2zm26.47 0l-.81-2.2h-3.26l.68 2.2zm-5.25 0l-.68-2.2h-3.32l.54 2.2zm-5.18 0l-.54-2.2h-3.37l.41 2.2zm18.93 0l-.95-2.2h-6.71l.82 2.2zm-24.5 0l-.41-2.2h-3.41l.28 2.2zm-43.85 0l.68-2.2h-3.26l-.81 2.2zm16.75 0l.27-2.2h-3.41l-.4 2.2zm-11.16 0l.54-2.2h-3.32l-.67 2.2zm-11.18 0l.81-2.2H25.8l-.95 2.2zm16.76 0l.41-2.2h-3.37l-.54 2.2zm11.15 0l.14-2.2h-3.44l-.27 2.2zm5.57 0v-2.2H58.2l-.14 2.2zm22.13 8.89H44.36l-.75 2.2h41.08zm18.37 2.2l-1.21-2.2h6.54l.95 2.2zm-15.4 0l-.83-2.2h6.29l.96 2.2zm8.64 0l-.96-2.2h4.31l1.1 2.2zm-69.72 0l1.21-2.2h-6.54l-.95 2.2zm15.4 0l.83-2.2h-6.29l-.96 2.2zm-8.65 0l.97-2.2h-4.31l-1.11 2.2zm-2.71-7.42l.82-2.19h-6.67l-.95 2.19zm68.24 0l-.81-2.19h6.66l.95 2.19zm-1.7 0l-.96-2.19h-3.85l.82 2.19zm-10.02 0l-.65-2.19h3.85l.78 2.19zm-6.04 0l-.47-2.19h3.85l.6 2.19zm-6.04 0l-.28-2.19h3.84l.43 2.19zm-6.03 0l-.11-2.19h3.85l.24 2.19zm-6.04 0l.07-2.19H66l.06 2.19zm-6.04 0l.25-2.19h3.85l-.11 2.19zm-6.03 0l.42-2.19h3.85l-.29 2.19zm-6.04 0l.6-2.19h3.85l-.47 2.19zm-6.04 0l.78-2.19h3.85l-.64 2.19zm-6.03 0l.95-2.19h3.85l-.82 2.19zm-2.2 3.71l.81-2.2h-8.75l-.95 2.2zm66.17 0l-.77-2.2h-4.17l.64 2.2zm-10.94 0l-.48-2.2h4.16l.62 2.2zm-6.65 0l-.32-2.2h4.17l.45 2.2zm-6.64 0l-.17-2.2h4.17l.3 2.2zm-6.64 0l-.01-2.2h4.16l.15 2.2zm-6.64 0l.14-2.2h4.17l-.01 2.2zm-6.65 0l.3-2.2h4.17l-.17 2.2zm-6.64 0l.46-2.2h4.16l-.32 2.2zm-6.64 0l.61-2.2h4.17l-.48 2.2zm-6.65 0l.77-2.2h4.17l-.63 2.2zm65.69 0l-.82-2.2h8.75l.95 2.2z" opacity=".57"/><path fill="#B7D5E5" d="M124.73 117.88L110.39 92.4c-.71-1.07-1.98-1.84-3.25-1.84c0 0 1.22 1.1 1.59 1.63l12.59 23.59c.56 1.02-.18 2.26-1.34 2.26H7.96c-1.15 0-1.89-1.23-1.35-2.24l11.95-23.18c.35-.6 1.88-1.99 1.88-1.99h-.45c-1.27 0-2.54.77-3.25 1.99L3.28 117.88c-.59.88-.01 2.12.99 2.12h119.46c1.01 0 1.59-1.24 1-2.12z"/><path fill="none" stroke="#EEE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.936" d="M25.97 28.02h13.21"/><path fill="#75A7BC" d="M109.37 30.11c0-1.04-1.01-1.12-1.01.11v55.8c0 1.34-1.09 2.43-2.43 2.43H22.08c-1.34 0-2.43-1.09-2.43-2.43v-55.8c0-1.23-1.01-1.15-1.01-.11l-.95 55.91c0 2.42 1.24 4.39 4.39 4.39h83.85c2.73 0 4.39-1.97 4.39-4.39l-.95-55.91z"/></svg>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Web Design Specialist with<br /> <a href="https://www.positivemasculinitynow.org" target="_blank">Positive Masculinity</a> - <small>2022 Feb - present</small></h3>
+                            <p class="color-white">Created SEO strategy and implemented new features to pre-existing website for this wonderful Non-Profit</p>
+                        </div>
+                    </div>
+
+                    <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                        <div class="media-object media-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="50" height="50" preserveAspectRatio="xMidYMid meet" viewBox="0 0 128 128"><path fill="#B7D5E5" d="M106 24.79H22.15c-1.92 0-3.48 1.56-3.48 3.48v57.59c0 1.92 1.56 3.48 3.48 3.48H106c1.92 0 3.48-1.56 3.48-3.48V28.27c0-1.92-1.55-3.48-3.48-3.48z"/><radialGradient id="svgIDa" cx="48.408" cy="13.024" r="75.465" gradientTransform="matrix(1 0 0 1.0843 0 -10.19)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2F7889"/><stop offset="1" stop-color="#424242"/></radialGradient><path fill="url(#svgIDa)" d="M104.75 83.2H23.4l.96-52.27h79.43z"/><path fill="#2F7889" d="M121.09 123.82H7.59c-.43 0-.83-.03-1.2-.09c-2.88-.44-4.21-4.18-2.5-6.74l.39-.59h119.59l.4.6c1.86 2.78.12 6.76-3.04 6.81c-.04.01-.09.01-.14.01z"/><path fill="#EEE" d="M106.84 90.41H20.6c-1.27 0-2.54.77-3.25 1.99l-14 25.48c-.59.88-.01 2.12.99 2.12H123.8c1 0 1.58-1.24.99-2.12l-14.71-25.63c-.7-1.08-1.97-1.84-3.24-1.84z"/><path fill="#B7D5E5" d="M86.36 115.52H41.8l2.85-7.98h39.07z"/><path fill="#69A1BA" d="m72.69 94.84l-.27-2.2h-3.44l.13 2.2zm-5.55 0l-.14-2.2h-3.45v2.2zm26.47 0l-.81-2.2h-3.26l.68 2.2zm-5.25 0l-.68-2.2h-3.32l.54 2.2zm-5.18 0l-.54-2.2h-3.37l.41 2.2zm18.93 0l-.95-2.2h-6.71l.82 2.2zm-24.5 0l-.41-2.2h-3.41l.28 2.2zm-43.85 0l.68-2.2h-3.26l-.81 2.2zm16.75 0l.27-2.2h-3.41l-.4 2.2zm-11.16 0l.54-2.2h-3.32l-.67 2.2zm-11.18 0l.81-2.2H25.8l-.95 2.2zm16.76 0l.41-2.2h-3.37l-.54 2.2zm11.15 0l.14-2.2h-3.44l-.27 2.2zm5.57 0v-2.2H58.2l-.14 2.2zm22.13 8.89H44.36l-.75 2.2h41.08zm18.37 2.2l-1.21-2.2h6.54l.95 2.2zm-15.4 0l-.83-2.2h6.29l.96 2.2zm8.64 0l-.96-2.2h4.31l1.1 2.2zm-69.72 0l1.21-2.2h-6.54l-.95 2.2zm15.4 0l.83-2.2h-6.29l-.96 2.2zm-8.65 0l.97-2.2h-4.31l-1.11 2.2zm-2.71-7.42l.82-2.19h-6.67l-.95 2.19zm68.24 0l-.81-2.19h6.66l.95 2.19zm-1.7 0l-.96-2.19h-3.85l.82 2.19zm-10.02 0l-.65-2.19h3.85l.78 2.19zm-6.04 0l-.47-2.19h3.85l.6 2.19zm-6.04 0l-.28-2.19h3.84l.43 2.19zm-6.03 0l-.11-2.19h3.85l.24 2.19zm-6.04 0l.07-2.19H66l.06 2.19zm-6.04 0l.25-2.19h3.85l-.11 2.19zm-6.03 0l.42-2.19h3.85l-.29 2.19zm-6.04 0l.6-2.19h3.85l-.47 2.19zm-6.04 0l.78-2.19h3.85l-.64 2.19zm-6.03 0l.95-2.19h3.85l-.82 2.19zm-2.2 3.71l.81-2.2h-8.75l-.95 2.2zm66.17 0l-.77-2.2h-4.17l.64 2.2zm-10.94 0l-.48-2.2h4.16l.62 2.2zm-6.65 0l-.32-2.2h4.17l.45 2.2zm-6.64 0l-.17-2.2h4.17l.3 2.2zm-6.64 0l-.01-2.2h4.16l.15 2.2zm-6.64 0l.14-2.2h4.17l-.01 2.2zm-6.65 0l.3-2.2h4.17l-.17 2.2zm-6.64 0l.46-2.2h4.16l-.32 2.2zm-6.64 0l.61-2.2h4.17l-.48 2.2zm-6.65 0l.77-2.2h4.17l-.63 2.2zm65.69 0l-.82-2.2h8.75l.95 2.2z" opacity=".57"/><path fill="#B7D5E5" d="M124.73 117.88L110.39 92.4c-.71-1.07-1.98-1.84-3.25-1.84c0 0 1.22 1.1 1.59 1.63l12.59 23.59c.56 1.02-.18 2.26-1.34 2.26H7.96c-1.15 0-1.89-1.23-1.35-2.24l11.95-23.18c.35-.6 1.88-1.99 1.88-1.99h-.45c-1.27 0-2.54.77-3.25 1.99L3.28 117.88c-.59.88-.01 2.12.99 2.12h119.46c1.01 0 1.59-1.24 1-2.12z"/><path fill="none" stroke="#EEE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.936" d="M25.97 28.02h13.21"/><path fill="#75A7BC" d="M109.37 30.11c0-1.04-1.01-1.12-1.01.11v55.8c0 1.34-1.09 2.43-2.43 2.43H22.08c-1.34 0-2.43-1.09-2.43-2.43v-55.8c0-1.23-1.01-1.15-1.01-.11l-.95 55.91c0 2.42 1.24 4.39 4.39 4.39h83.85c2.73 0 4.39-1.97 4.39-4.39l-.95-55.91z"/></svg>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Full Stack Developer with<br /><a href="https://www.fiftyshadesofcode.com" target="_blank">Fifty Shades of Code</a> - <small>2017 Aug - present</small></h3>
+                            <p class="color-white">Founded my own company for Full Stack Web Development to bring fully accessible and usable Web Applications and Web Sites to those who need them</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Education Section -->
+
+<section id="education" class="parallax-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                <div class="color-white education-thumb">
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                        <h1>My Education</h1>
+{{--                        <p class="color-white">In cursus orci non ipsum gravida dignissim</p>--}}
+                    </div>
+
+                    <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                        <div class="media-object media-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="65" height="65" preserveAspectRatio="xMidYMid meet" viewBox="0 0 128 128"><path fill="#B7D5E5" d="M106 24.79H22.15c-1.92 0-3.48 1.56-3.48 3.48v57.59c0 1.92 1.56 3.48 3.48 3.48H106c1.92 0 3.48-1.56 3.48-3.48V28.27c0-1.92-1.55-3.48-3.48-3.48z"/><radialGradient id="svgIDa" cx="48.408" cy="13.024" r="75.465" gradientTransform="matrix(1 0 0 1.0843 0 -10.19)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2F7889"/><stop offset="1" stop-color="#424242"/></radialGradient><path fill="url(#svgIDa)" d="M104.75 83.2H23.4l.96-52.27h79.43z"/><path fill="#2F7889" d="M121.09 123.82H7.59c-.43 0-.83-.03-1.2-.09c-2.88-.44-4.21-4.18-2.5-6.74l.39-.59h119.59l.4.6c1.86 2.78.12 6.76-3.04 6.81c-.04.01-.09.01-.14.01z"/><path fill="#EEE" d="M106.84 90.41H20.6c-1.27 0-2.54.77-3.25 1.99l-14 25.48c-.59.88-.01 2.12.99 2.12H123.8c1 0 1.58-1.24.99-2.12l-14.71-25.63c-.7-1.08-1.97-1.84-3.24-1.84z"/><path fill="#B7D5E5" d="M86.36 115.52H41.8l2.85-7.98h39.07z"/><path fill="#69A1BA" d="m72.69 94.84l-.27-2.2h-3.44l.13 2.2zm-5.55 0l-.14-2.2h-3.45v2.2zm26.47 0l-.81-2.2h-3.26l.68 2.2zm-5.25 0l-.68-2.2h-3.32l.54 2.2zm-5.18 0l-.54-2.2h-3.37l.41 2.2zm18.93 0l-.95-2.2h-6.71l.82 2.2zm-24.5 0l-.41-2.2h-3.41l.28 2.2zm-43.85 0l.68-2.2h-3.26l-.81 2.2zm16.75 0l.27-2.2h-3.41l-.4 2.2zm-11.16 0l.54-2.2h-3.32l-.67 2.2zm-11.18 0l.81-2.2H25.8l-.95 2.2zm16.76 0l.41-2.2h-3.37l-.54 2.2zm11.15 0l.14-2.2h-3.44l-.27 2.2zm5.57 0v-2.2H58.2l-.14 2.2zm22.13 8.89H44.36l-.75 2.2h41.08zm18.37 2.2l-1.21-2.2h6.54l.95 2.2zm-15.4 0l-.83-2.2h6.29l.96 2.2zm8.64 0l-.96-2.2h4.31l1.1 2.2zm-69.72 0l1.21-2.2h-6.54l-.95 2.2zm15.4 0l.83-2.2h-6.29l-.96 2.2zm-8.65 0l.97-2.2h-4.31l-1.11 2.2zm-2.71-7.42l.82-2.19h-6.67l-.95 2.19zm68.24 0l-.81-2.19h6.66l.95 2.19zm-1.7 0l-.96-2.19h-3.85l.82 2.19zm-10.02 0l-.65-2.19h3.85l.78 2.19zm-6.04 0l-.47-2.19h3.85l.6 2.19zm-6.04 0l-.28-2.19h3.84l.43 2.19zm-6.03 0l-.11-2.19h3.85l.24 2.19zm-6.04 0l.07-2.19H66l.06 2.19zm-6.04 0l.25-2.19h3.85l-.11 2.19zm-6.03 0l.42-2.19h3.85l-.29 2.19zm-6.04 0l.6-2.19h3.85l-.47 2.19zm-6.04 0l.78-2.19h3.85l-.64 2.19zm-6.03 0l.95-2.19h3.85l-.82 2.19zm-2.2 3.71l.81-2.2h-8.75l-.95 2.2zm66.17 0l-.77-2.2h-4.17l.64 2.2zm-10.94 0l-.48-2.2h4.16l.62 2.2zm-6.65 0l-.32-2.2h4.17l.45 2.2zm-6.64 0l-.17-2.2h4.17l.3 2.2zm-6.64 0l-.01-2.2h4.16l.15 2.2zm-6.64 0l.14-2.2h4.17l-.01 2.2zm-6.65 0l.3-2.2h4.17l-.17 2.2zm-6.64 0l.46-2.2h4.16l-.32 2.2zm-6.64 0l.61-2.2h4.17l-.48 2.2zm-6.65 0l.77-2.2h4.17l-.63 2.2zm65.69 0l-.82-2.2h8.75l.95 2.2z" opacity=".57"/><path fill="#B7D5E5" d="M124.73 117.88L110.39 92.4c-.71-1.07-1.98-1.84-3.25-1.84c0 0 1.22 1.1 1.59 1.63l12.59 23.59c.56 1.02-.18 2.26-1.34 2.26H7.96c-1.15 0-1.89-1.23-1.35-2.24l11.95-23.18c.35-.6 1.88-1.99 1.88-1.99h-.45c-1.27 0-2.54.77-3.25 1.99L3.28 117.88c-.59.88-.01 2.12.99 2.12h119.46c1.01 0 1.59-1.24 1-2.12z"/><path fill="none" stroke="#EEE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.936" d="M25.97 28.02h13.21"/><path fill="#75A7BC" d="M109.37 30.11c0-1.04-1.01-1.12-1.01.11v55.8c0 1.34-1.09 2.43-2.43 2.43H22.08c-1.34 0-2.43-1.09-2.43-2.43v-55.8c0-1.23-1.01-1.15-1.01-.11l-.95 55.91c0 2.42 1.24 4.39 4.39 4.39h83.85c2.73 0 4.39-1.97 4.39-4.39l-.95-55.91z"/></svg>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Full Stack Web Development - <small>2021 Aug - 2022 June</small></h3>
+                            <p class="color-white"><a href="https://www.tech.com" target="_blank">Bloom Institute of Technology</a> </p>
+                        </div>
+                    </div>
+
+{{--                    <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">--}}
+{{--                        <div class="media-object media-left">--}}
+{{--                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="65" height="65" preserveAspectRatio="xMidYMid meet" viewBox="0 0 128 128"><path fill="#B7D5E5" d="M106 24.79H22.15c-1.92 0-3.48 1.56-3.48 3.48v57.59c0 1.92 1.56 3.48 3.48 3.48H106c1.92 0 3.48-1.56 3.48-3.48V28.27c0-1.92-1.55-3.48-3.48-3.48z"/><radialGradient id="svgIDa" cx="48.408" cy="13.024" r="75.465" gradientTransform="matrix(1 0 0 1.0843 0 -10.19)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2F7889"/><stop offset="1" stop-color="#424242"/></radialGradient><path fill="url(#svgIDa)" d="M104.75 83.2H23.4l.96-52.27h79.43z"/><path fill="#2F7889" d="M121.09 123.82H7.59c-.43 0-.83-.03-1.2-.09c-2.88-.44-4.21-4.18-2.5-6.74l.39-.59h119.59l.4.6c1.86 2.78.12 6.76-3.04 6.81c-.04.01-.09.01-.14.01z"/><path fill="#EEE" d="M106.84 90.41H20.6c-1.27 0-2.54.77-3.25 1.99l-14 25.48c-.59.88-.01 2.12.99 2.12H123.8c1 0 1.58-1.24.99-2.12l-14.71-25.63c-.7-1.08-1.97-1.84-3.24-1.84z"/><path fill="#B7D5E5" d="M86.36 115.52H41.8l2.85-7.98h39.07z"/><path fill="#69A1BA" d="m72.69 94.84l-.27-2.2h-3.44l.13 2.2zm-5.55 0l-.14-2.2h-3.45v2.2zm26.47 0l-.81-2.2h-3.26l.68 2.2zm-5.25 0l-.68-2.2h-3.32l.54 2.2zm-5.18 0l-.54-2.2h-3.37l.41 2.2zm18.93 0l-.95-2.2h-6.71l.82 2.2zm-24.5 0l-.41-2.2h-3.41l.28 2.2zm-43.85 0l.68-2.2h-3.26l-.81 2.2zm16.75 0l.27-2.2h-3.41l-.4 2.2zm-11.16 0l.54-2.2h-3.32l-.67 2.2zm-11.18 0l.81-2.2H25.8l-.95 2.2zm16.76 0l.41-2.2h-3.37l-.54 2.2zm11.15 0l.14-2.2h-3.44l-.27 2.2zm5.57 0v-2.2H58.2l-.14 2.2zm22.13 8.89H44.36l-.75 2.2h41.08zm18.37 2.2l-1.21-2.2h6.54l.95 2.2zm-15.4 0l-.83-2.2h6.29l.96 2.2zm8.64 0l-.96-2.2h4.31l1.1 2.2zm-69.72 0l1.21-2.2h-6.54l-.95 2.2zm15.4 0l.83-2.2h-6.29l-.96 2.2zm-8.65 0l.97-2.2h-4.31l-1.11 2.2zm-2.71-7.42l.82-2.19h-6.67l-.95 2.19zm68.24 0l-.81-2.19h6.66l.95 2.19zm-1.7 0l-.96-2.19h-3.85l.82 2.19zm-10.02 0l-.65-2.19h3.85l.78 2.19zm-6.04 0l-.47-2.19h3.85l.6 2.19zm-6.04 0l-.28-2.19h3.84l.43 2.19zm-6.03 0l-.11-2.19h3.85l.24 2.19zm-6.04 0l.07-2.19H66l.06 2.19zm-6.04 0l.25-2.19h3.85l-.11 2.19zm-6.03 0l.42-2.19h3.85l-.29 2.19zm-6.04 0l.6-2.19h3.85l-.47 2.19zm-6.04 0l.78-2.19h3.85l-.64 2.19zm-6.03 0l.95-2.19h3.85l-.82 2.19zm-2.2 3.71l.81-2.2h-8.75l-.95 2.2zm66.17 0l-.77-2.2h-4.17l.64 2.2zm-10.94 0l-.48-2.2h4.16l.62 2.2zm-6.65 0l-.32-2.2h4.17l.45 2.2zm-6.64 0l-.17-2.2h4.17l.3 2.2zm-6.64 0l-.01-2.2h4.16l.15 2.2zm-6.64 0l.14-2.2h4.17l-.01 2.2zm-6.65 0l.3-2.2h4.17l-.17 2.2zm-6.64 0l.46-2.2h4.16l-.32 2.2zm-6.64 0l.61-2.2h4.17l-.48 2.2zm-6.65 0l.77-2.2h4.17l-.63 2.2zm65.69 0l-.82-2.2h8.75l.95 2.2z" opacity=".57"/><path fill="#B7D5E5" d="M124.73 117.88L110.39 92.4c-.71-1.07-1.98-1.84-3.25-1.84c0 0 1.22 1.1 1.59 1.63l12.59 23.59c.56 1.02-.18 2.26-1.34 2.26H7.96c-1.15 0-1.89-1.23-1.35-2.24l11.95-23.18c.35-.6 1.88-1.99 1.88-1.99h-.45c-1.27 0-2.54.77-3.25 1.99L3.28 117.88c-.59.88-.01 2.12.99 2.12h119.46c1.01 0 1.59-1.24 1-2.12z"/><path fill="none" stroke="#EEE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.936" d="M25.97 28.02h13.21"/><path fill="#75A7BC" d="M109.37 30.11c0-1.04-1.01-1.12-1.01.11v55.8c0 1.34-1.09 2.43-2.43 2.43H22.08c-1.34 0-2.43-1.09-2.43-2.43v-55.8c0-1.23-1.01-1.15-1.01-.11l-.95 55.91c0 2.42 1.24 4.39 4.39 4.39h83.85c2.73 0 4.39-1.97 4.39-4.39l-.95-55.91z"/></svg>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6">
+                <div class="background-image education-img"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+
+<section id="skills" class="parallax-section">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
+                <h2 class="wow fadeInUp" data-wow-delay="0.8s">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
+                <p class="wow fadeInUp" data-wow-delay="1s">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Work Section -->
+
+<section id="work" class="parallax-section">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
+                <h2 class="wow fadeInUp" data-wow-delay="0.8s">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
+                <p class="wow fadeInUp" data-wow-delay="1s">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+
+<section id="contact" class="parallax-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+                <div class="contact-form">
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                        <h1 class="color-white">Say hello..</h1>
+                        <p class="color-white">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
+                    </div>
+
+                    <div id="contact-form">
+                        <form action="#template-mo" method="post">
+                            <div class="wow fadeInUp" data-wow-delay="1s">
+                                <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
+                            </div>
+                            <div class="wow fadeInUp" data-wow-delay="1.2s">
+                                <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="wow fadeInUp" data-wow-delay="1.4s">
+                                <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
+                            </div>
+                            <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
+                                <input name="submit" type="submit" class="form-control" id="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="background-image contact-img"></div>
+            </div>
+
+            <div class="bg-dark col-md-3 col-sm-6">
+                <div class="contact-thumb">
+                    <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
+                        <h3 class="color-white">Located</h3>
+                        <p>Niskayuna, New York USA</p>
+                    </div>
+
+                    <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
+                        <h3 class="color-white">Contact.</h3>
+                        <p><i class="fa fa-phone"></i> 518-630-4268</p>
+                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:philiprmcdavid@gmail.com">philiprmcdavid@gmail.com</a></p>
+                        <p><i class="fa fa-globe"></i> <a href="#">fiftyshadesofcode.com</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                    <p>Copyright &copy; 2022 Fifty Shades of Code</p>
+                </div>
+                <ul class="wow fadeInUp social-icon" data-wow-delay="2s">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                    <li><a href="#" class="fa fa-dribbble"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="{{ asset('Frontend/js/jquery.js') }}"></script>
+<script src="{{ asset('Frontend/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('Frontend/js/jquery.parallax.js') }}"></script>
+<script src="{{ asset('Frontend/js/smoothscroll.js') }}"></script>
+<script src="{{ asset('Frontend/js/wow.min.js') }}"></script>
+<script src="{{ asset('Frontend/js/custom.js') }}"></script>
+
+</body>
 </html>

@@ -1,13 +1,5 @@
-/*
-
-Stimulus Template
-
-http://www.templatemo.com/tm-498-stimulus
-
-*/
-
 body {
-	background: #ffffff;
+	background: #ebe9e4;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
 	font-weight: 300;
@@ -21,7 +13,7 @@ html,body {
 
 
 /*---------------------------------------
-    Typorgraphy              
+    Typography
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
@@ -34,15 +26,15 @@ h1,h2,h3 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 75px;
   padding-bottom: 14px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 42px;
   line-height: 52px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 h3 {
@@ -70,11 +62,11 @@ strong {
 }
 
 p {
-    color: #888;
+    color: #1a1e21;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0;
 }
 
 .section-btn {
@@ -92,7 +84,7 @@ p {
 }
 
 .section-btn:hover {
-  background: #E3AE57;
+  background: #000;
   border-color: transparent;
   color: #ffffff;
 }
@@ -121,7 +113,7 @@ p {
 }
 
 #home .container,
-#about .container, 
+#about .container,
 #experience .container,
 #service .container,
 #education .container,
@@ -144,7 +136,7 @@ footer {
 
 #experience,
 #education {
-  background: #E9724C;
+  background: #509bc0;
 }
 
 .background-image {
@@ -164,12 +156,12 @@ footer {
   color: #ffffff;
 }
 
-.color-yellow {
-  color: #E3AE57;
+.color-red {
+  color: #bc5858;
 }
 
-.bg-yellow {
-  background: #E3AE57;
+.bg-red {
+  background: #bc5858;
 }
 
 .bg-white {
@@ -177,13 +169,13 @@ footer {
 }
 
 .bg-dark {
-  background: #161616;
+  background: #01019e;
 }
 
 
 
 /*---------------------------------------
-    General               
+    General
 -----------------------------------------*/
 
 html{
@@ -191,14 +183,14 @@ html{
 }
 
 a {
-  color: #E3AE57;
+  color: #bc5858;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #E3AE57;
+  color: #079ba1;
   outline: none;
 }
 
@@ -218,7 +210,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Preloader section              
+    Preloader section
 -----------------------------------------*/
 
 .preloader {
@@ -252,7 +244,7 @@ a:hover, a:active, a:focus {
   margin-top: -10px;
   margin-left: -10px;
   border-radius: 50%;
-  border: 2px solid #E3AE57;
+  border: 2px solid #079ba1;
   border-top-color: #f9f9f9;
   animation: spinner .6s linear infinite;
 }
@@ -268,7 +260,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Navigation section              
+    Navigation section
 -----------------------------------------*/
 
 .custom-navbar {
@@ -297,7 +289,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #E3AE57;
+    color: #bc5858;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -307,7 +299,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #E3AE57;
+    color: #079ba1;
 }
 
 .custom-navbar .navbar-toggle {
@@ -320,7 +312,7 @@ a:hover, a:active, a:focus {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #E3AE57;
+    background: #bc5858;
     border-color: transparent;
 }
 
@@ -328,11 +320,11 @@ a:hover, a:active, a:focus {
     .custom-navbar {
         padding: 12px 0;
         border-bottom: 0;
-        background: 0 0; 
+        background: 0 0;
     }
     .custom-navbar.top-nav-collapse {
         background: #ffffff;
-        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
         padding: 0;
     }
 
@@ -341,7 +333,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Home section              
+    Home section
 -----------------------------------------*/
 
 #home h1 {
@@ -356,9 +348,9 @@ a:hover, a:active, a:focus {
 }
 
 #home .home-img {
-  background: url('../images/home-img.jpg') no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
+  background-image: url('../assets/Philip1.jpg');
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
 }
@@ -379,21 +371,22 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   About section              
+   About section
 -----------------------------------------*/
 
 #about .about-img {
-    background: url('../images/about-img.jpg') no-repeat;
+    background: url('../assets/Philip.png') no-repeat;
+    background-size: auto;
 }
 
 #about .about-thumb,
 #about .skill-thumb {
-  padding: 22px 32px 32px 32px;
+  padding: 10px 32px 2px 32px;
 }
 
 #about .progress {
   background: #ffffff;
-  border-radius: 0px;
+  border-radius: 0;
   box-shadow: none;
   height: 2px;
 }
@@ -412,11 +405,11 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Service section              
+    Service section
 -----------------------------------------*/
 
 #service {
-  background: #E9724C;
+  background: #921b1c;
 }
 
 #service p {
@@ -436,15 +429,17 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Experience section              
+    Experience section
 -----------------------------------------*/
 
 #experience .experience-img {
   background: url('../images/experience-img.jpg') no-repeat;
+    height: 500px;
+    width: auto;
 }
 
 #experience .media-heading {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #experience .media .fa {
@@ -453,16 +448,16 @@ a:hover, a:active, a:focus {
 }
 
 #experience small {
-  color: #633;
+  color: #921b1c;
   font-weight: bold;
 }
 
 /*---------------------------------------
-    Education section              
+    Education section
 -----------------------------------------*/
 
 #education {
-  background: #E3AE57;
+  background: #a1d1ba;
 }
 
 #education .education-img {
@@ -470,7 +465,7 @@ a:hover, a:active, a:focus {
 }
 
 #education .media-heading {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #education .media .fa {
@@ -479,23 +474,22 @@ a:hover, a:active, a:focus {
 }
 
 #education small {
-  color: #886D1E;
+  color: #079ba1;
   font-weight: bold;
 }
 
 
 
 /*---------------------------------------
-   Quotes section              
+   Quotes section
 -----------------------------------------*/
 
 #quotes {
-    background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
-    background-position: center center;
+    background: url('../images/quotes-bg.jpg') repeat-y fixed center center;
     color: #ffffff;
     position: relative;
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 
 #quotes .overlay {
@@ -519,11 +513,11 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Contact section              
+    Contact section
 -----------------------------------------*/
 
 #contact {
-  background: #E9724C;
+  background: #bc5858;
 }
 
 #contact .contact-form,
@@ -549,8 +543,8 @@ a:hover, a:active, a:focus {
 #contact .form-control {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #E3AE57;
-  border-radius: 0px;
+  border-bottom: 1px solid #079ba1;
+  border-radius: 0;
   box-shadow: none;
   color: #ffffff;
   font-size: 18px;
@@ -588,17 +582,17 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Footer section              
+   Footer section
 -----------------------------------------*/
 
 footer {
-    padding: 140px 0px;
+    padding: 140px 0;
 }
 
 
 
 /*---------------------------------------
-   Social icon             
+   Social icon
 -----------------------------------------*/
 
 .social-icon {
@@ -640,7 +634,7 @@ footer {
 
 
 /*---------------------------------------
-   Mobile Responsive         
+   Mobile Responsive
 -----------------------------------------*/
 
 @media only screen and (max-width: 580px) {
@@ -671,7 +665,7 @@ footer {
   }
 
   #home .container,
-  #about .container, 
+  #about .container,
   #experience .container,
   #service .container,
   #education .container,
