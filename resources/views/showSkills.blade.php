@@ -20,6 +20,7 @@
                     <img class='w-[175px] mx-auto' src="{{ $skill->image }}" alt="HTML icon" />
                     <p class='mt-4 md:text-sm'>{{ $skill->skill }}</p>
                 </div>
+            </div>
         @endforeach
         </div>
     </div>

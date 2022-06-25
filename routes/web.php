@@ -31,6 +31,14 @@ Route::get('/dashboard/tables', function () {
     return view('admin/dashboard/tables');
 });
 
+Route::get('/dashboard/layoutsidenavlight', function () {
+    return view('admin/dashboard/layoutsidenavlight');
+});
+
+Route::get('/dashboard/layoutstatic', function () {
+    return view('admin/dashboard/layoutstatic');
+});
+
 Route::resource('skills', SkillsController::class);
 
 Auth::routes();
