@@ -11,12 +11,12 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/Favicon.png') }}">
 
     <title>Fifty Shades of Code</title>
-    <link rel="stylesheet" href="{{ URL::asset('Frontend/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('Frontend/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('Frontend/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('Frontend/css/templatemo-style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('Frontend/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('Frontend/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('Frontend/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('Frontend/css/templatemo-style.css') }}">
 
-    <link href="{{ asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700') }}" rel="stylesheet">
+    <link href="{{ URL::asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700') }}" rel="stylesheet">
 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -636,12 +636,12 @@
 
 <!-- SCRIPTS -->
 
-<script src="{{ URL::asset('Frontend/js/jquery.js') }}"></script>
-<script src="{{ URL::asset('Frontend/js/bootstrap.min.js') }}"></script>
-<script src="{{ URL::asset('Frontend/js/jquery.parallax.js') }}"></script>
-<script src="{{ URL::asset('Frontend/js/smoothscroll.js') }}"></script>
-<script src="{{ URL::asset('Frontend/js/wow.min.js') }}"></script>
-<script src="{{ URL::asset('Frontend/js/custom.js') }}"></script>
+<script src="{{ secure_asset('Frontend/js/jquery.js') }}"></script>
+<script src="{{ secure_asset('Frontend/js/bootstrap.min.js') }}"></script>
+<script src="{{ secure_asset('Frontend/js/jquery.parallax.js') }}"></script>
+<script src="{{ secure_asset('Frontend/js/smoothscroll.js') }}"></script>
+<script src="{{ secure_asset('Frontend/js/wow.min.js') }}"></script>
+<script src="{{ secure_asset('Frontend/js/custom.js') }}"></script>
 
 </body>
 </html>
