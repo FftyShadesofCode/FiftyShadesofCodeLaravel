@@ -8,13 +8,13 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/Favicon.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('../../../public/assets/Favicon.png') }}">
 
     <title>Fifty Shades of Code</title>
-    <link rel="stylesheet" href="{{ asset('Frontend/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('Frontend/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('Frontend/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('Frontend/css/templatemo-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('../../../public/Frontend/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('../../../public/Frontend/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('../../../public/Frontend/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('../../../public/Frontend/css/templatemo-style.css') }}">
 
     <link href="{{ asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700') }}" rel="stylesheet">
 
@@ -636,12 +636,12 @@
 
 <!-- SCRIPTS -->
 
-<script src="{{ asset('Frontend/js/jquery.js') }}"></script>
-<script src="{{ asset('Frontend/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('Frontend/js/jquery.parallax.js') }}"></script>
-<script src="{{ asset('Frontend/js/smoothscroll.js') }}"></script>
-<script src="{{ asset('Frontend/js/wow.min.js') }}"></script>
-<script src="{{ asset('Frontend/js/custom.js') }}"></script>
+<script src="{{ asset('../../../public/Frontend/js/jquery.js') }}"></script>
+<script src="{{ asset('../../../public/Frontend/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('../../../public/Frontend/js/jquery.parallax.js') }}"></script>
+<script src="{{ asset('../../../public/Frontend/js/smoothscroll.js') }}"></script>
+<script src="{{ asset('../../../public/Frontend/js/wow.min.js') }}"></script>
+<script src="{{ asset('../../../public/Frontend/js/custom.js') }}"></script>
 
 </body>
 </html>
