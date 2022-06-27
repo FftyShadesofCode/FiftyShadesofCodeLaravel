@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -15,11 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         Schema::defaultStringLength(500);
-        if($this->app->environment('production')) {
-            URL::forceScheme('https');
-        }
     }
-
     /**
      * Bootstrap any application services.
      *
@@ -27,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        if(env('APP_ENV') !== 'local') {
+            URL::forceScheme('https');
+        }
     }
 }
