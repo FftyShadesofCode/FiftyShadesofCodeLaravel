@@ -8,6 +8,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="icon" type="image/x-icon" href="{{ secure_asset('assets/Favicon.png') }}">
 
     <title>Fifty Shades of Code</title>
