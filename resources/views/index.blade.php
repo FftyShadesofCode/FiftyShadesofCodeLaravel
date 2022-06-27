@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/Favicon.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ secure_asset('assets/Favicon.png') }}">
 
     <title>Fifty Shades of Code</title>
     <link rel="stylesheet" href="{{ secure_asset('Frontend/css/bootstrap.min.css') }}">
@@ -44,7 +44,7 @@
                 <span class="icon icon-bar"></span>
             </button>
             <a href="#" class="navbar-brand">
-                <img src="{{ asset('assets/FiftyShadesofCode.png') }}" alt="Fifty Shades of Code text" />
+                <img src="{{ secure_asset('assets/FiftyShadesofCode.png') }}" alt="Fifty Shades of Code text" />
             </a>
         </div>
 
@@ -71,7 +71,7 @@
 
             <div class="col-md-6 col-sm-6">
                 <div class="home-img">
-                    <img src="{{ asset('../../assets/Logo.gif') }}" alt="Dragon with Neck Tie" />
+                    <img src="{{ secure_asset('../../assets/Logo.gif') }}" alt="Dragon with Neck Tie" />
                 </div>
             </div>
 
