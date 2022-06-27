@@ -14,9 +14,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('skills', function (Blueprint $table) {
-            $table->id();
-            $table->string('skill');
-            $table->string('svg');
+            $table->increments('id');
+            $table->string('skill', 500)->unique();
+            $table->string('svg', 1000)->unique()->nullable();
             $table->timestamps();
         });
     }

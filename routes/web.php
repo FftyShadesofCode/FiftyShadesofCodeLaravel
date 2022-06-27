@@ -39,7 +39,17 @@ Route::get('/dashboard/layoutstatic', function () {
     return view('admin/dashboard/layoutstatic');
 });
 
-Route::resource('skills', SkillsController::class);
+Route::get('/dashboard/newskill', function () {
+    return view('admin/dashboard/newSkill');
+});
+
+Route::get('/dashboard/viewskills', function () {
+    return view('admin/dashboard/viewSkills');
+});
+
+Route::get('skills', [SkillsController::class, 'index']);
+Route::post('create', [SkillsController::class, 'create']);
+Route::get('show', [SkillsController::class, 'show']);
 
 Auth::routes();
 
