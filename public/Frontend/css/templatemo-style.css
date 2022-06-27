@@ -547,21 +547,14 @@ a:hover, a:active, a:focus {
 #skills .thumbnail {
     color: black;
     background-color: #e8e6e6;
-    box-shadow: 0px 2px 10px 3px rgba(148,0,211,1),
-    0px 2px 10px 4px rgba(75,0,130,1),
-    0px 2px 10px 7px rgba(0,0,255,1),
-    0px 2px 10px 10px rgba(0,255,0,1),
-    0px 2px 10px 13px rgba(255,255,0,1),
-    0px 2px 8px 15px rgba(255,127,0,1),
-    0px 2px 8px 19px rgba(255,0,0,1),
-    0px 2px 10px 22px rgba(255, 105, 180, 1);
+    box-shadow: 2px 2px 5px 2px #7de7d6,
+    2px 2px 10px 5px #135e55;
     padding: 2rem 0 1rem 0;
     transition: all 500ms ease-in-out;
 }
 
 #skills .thumbnail:hover {
     background-color: #d1d1d1;
-    color: white;
     transform: scale(1.1);
     transition: all 500ms ease-in-out;
 }
@@ -582,14 +575,30 @@ a:hover, a:active, a:focus {
     background-color: #ebe9e4;
     position: relative;
     padding: 25px 0;
+    width: 100%;
 }
+
+#work .container {
+    width: 100% !important;
+    padding: 0 2rem;
+}
+
+#work .row {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 #work .overlay {
     background: #121212;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
     opacity: 0.25;
 }
 
@@ -606,35 +615,27 @@ a:hover, a:active, a:focus {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2rem;
+    gap: 4rem;
     text-align: center;
     padding: 5rem 10rem;
     margin: 0;
 }
 
-#work .thumbnail {
+#work .thumbnails .thumbnail {
     background-color: #e8e6e6;
-    box-shadow: 0px 2px 10px 3px rgba(148,0,211,1),
-    0px 2px 10px 4px rgba(75,0,130,1),
-    0px 2px 10px 7px rgba(0,0,255,1),
-    0px 2px 10px 10px rgba(0,255,0,1),
-    0px 2px 10px 13px rgba(255,255,0,1),
-    0px 2px 8px 15px rgba(255,127,0,1),
-    0px 2px 8px 19px rgba(255,0,0,1),
-    0px 2px 10px 22px rgba(255, 105, 180, 1);
+    box-shadow: 2px 2px 5px 2px #7de7d6,
+    2px 2px 10px 5px #135e55;
     transition: all 500ms ease-in-out;
-    width: fit-content;
-    display: inline-block;
 }
 
-#work .thumbnail:hover {
+#work .thumbnails .thumbnail:hover {
     background-color: #d1d1d1;
     color: white;
     transform: scale(1.1);
     transition: all 500ms ease-in-out;
 }
 
-#work .thumbnail .overlay {
+#work .thumbnails .thumbnail .overlay {
     background: #121212;
     width: 100%;
     height: 100%;
@@ -644,49 +645,119 @@ a:hover, a:active, a:focus {
 }
 
 .folpd {
-    height: 200px;
+    height: 22vh;
+    width: 20vw;
     background-size: contain;
-    background: url('../../assets/works/FrameofLightDesigns2.png') no-repeat center;
-    justify-content: center;
+    background: url('../../assets/works/FrameofLightDesigns.png') no-repeat center;
+    justify-items: center;
+}
+
+.pmnow {
+    height: 22vh;
+    width: 20vw;
+    background-size: contain;
+    background: url('../../assets/works/PositiveMasculinityNow.png') no-repeat center;
+    justify-items: center;
+}
+
+.nenyos {
+    height: 22vh;
+    width: 20vw;
+    background-size: contain;
+    background: url('../../assets/works/NENYOS.png') no-repeat center;
+    justify-items: center;
+}
+
+.tahl {
+    height: 22vh;
+    width: 20vw;
+    background-size: contain;
+    background: url('../../assets/works/TheAwesomeHairLab.png') no-repeat center;
+    justify-items: center;
+}
+
+.gmhco {
+    height: 22vh;
+    width: 20vw;
+    background-size: contain;
+    background: url('../../assets/works/GreenMountainHashCo.png') no-repeat center;
+    justify-items: center;
+}
+
+.aswm {
+    height: 22vh;
+    width: 20vw;
+    background-size: contain;
+    background: url('../../assets/works/ASWMechanical.png') no-repeat center;
+    justify-items: center;
+}
+
+.undd {
+    height: 22vh;
+    width: 20vw;
+    background-size: contain;
+    background: url('../../assets/works/UnderdogDevs.png') no-repeat center;
+    justify-items: center;
+}
+
+.bapi {
+    height: 22vh;
+    width: 20vw;
+    background-size: contain;
+    background: url('../../assets/works/BattleshipAPI-600x500.png') no-repeat center;
+    justify-items: center;
 }
 
 .work {
-    background-color: #d1d1d1;
+    background-color: #7de7d6;
     opacity: 0;
     width: 100%;
     height: 100%;
+    padding: 3rem 0;
 }
 
 .work:hover {
-    opacity: 100%;
+    opacity: 95%;
     justify-content: center;
     align-items: center;
 }
 
-.work .workText {
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 5px black;
+.workText {
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px white;
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: white;
-    padding: 2rem 0;
+    color: black;
 }
+
 .work .works {
     opacity: 0;
 }
 
 .work .works:hover {
     opacity: 100%;
+    padding: 5rem 0;
 }
 
 .work-btns {
-    margin: 5rem 0;
+    margin: 2rem 0;
 }
 
-/*---------------------------------------
-    Contact section
------------------------------------------*/
+.work-btns .work-btn {
+    margin: 0 2rem;
+    font-size: 2rem;
+    width: 4vw;
+}
+
+.work-btn button {
+    border: 5px #00591a;
+    background-color: #f8fffb;
+}
+
+    /*---------------------------------------
+        Contact section
+    -----------------------------------------*/
 
 #contact {
   background: #bc5858;
@@ -796,14 +867,65 @@ footer {
     margin: 22px 4px 10px 4px;
 }
 
-.social-icon li a:hover {
-    background: #E3AE57;
-    border-color: #ffffff;
-    color: #ffffff;
+.social-icon .fa-facebook {
+    background: none;
+    color: #1877f2;
     transform: scale(1.1);
 }
 
+.social-icon .fa-facebook:hover {
+    background-color: #1877f2 !important;
+    color: white;
+    border-color: white;
+}
 
+.social-icon .fa-github {
+    background: none;
+    color: #6e5494;
+    transform: scale(1.1);
+}
+
+.social-icon .fa-github:hover {
+    background-color: #0077b5 !important;
+    color: white;
+    border-color: white;
+}
+
+.social-icon .fa-github {
+    background: none;r: #ffffff;
+    color: #0077b5;
+    transform: scale(1.1);
+}
+
+.social-icon .fa-linkedin:hover {
+    background-color: #0077b5 !important;
+    color: white;
+    border-color: white;
+}
+
+.social-icon .fa-twitter {
+    background: none;
+    color: #1da1f2;
+    transform: scale(1.1);
+}
+
+.social-icon .fa-twitter:hover {
+    background-color: #1da1f2 !important;
+    color: white;
+    border-color: white;
+}
+
+.social-icon .fa-instagram {
+    background: none;
+    color: #e1306c;
+    transform: scale(1.1);
+}
+
+.social-icon .fa-instagram:hover {
+    background-color: #e1306c !important;
+    color: white;
+    border-color: white;
+}
 
 /*---------------------------------------
    Mobile Responsive
