@@ -421,22 +421,34 @@
 
 <!-- Work Section -->
 
-<section id="work" class="parallax-section">
+<section id="work" class="parallax-section row">
     <div class="container">
         <div class="overlay"></div>
         <div class="row">
             <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
                 <div>
-                    <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                    <div class="wow fadeInUp section-title text" data-wow-delay="0.8s">
                         <h1>My Work</h1>
                     </div>
-{{--                    <p class='color-white'>These are the technologies I've worked with</p>--}}
+                    <p class='color-white'>Check out some of my recent work</p>
                 </div>
 
-            <div class="col-md-offset-1 col-md-10 col-sm-12">
-                <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
-                <h2 class="wow fadeInUp" data-wow-delay="0.8s">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
-                <p class="wow fadeInUp" data-wow-delay="1s">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+            <div class="wow fadeInUp thumbnails">
+                <div class="folpd works thumbnail">
+                    <div class="work works">
+                        <span class="workText">
+                            Frame of Light Designs
+                        </span>
+                        <div class="work-btns">
+                            <a href="https://www.frameoflightdesigns.com" target="_blank">
+                                <button class=" work-btn">Site</button>
+                            </a>
+                            <a href="https://www.frameoflightdesigns.com" target="_blank">
+                                <button class=" work-btn">Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
