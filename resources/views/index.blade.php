@@ -34,7 +34,7 @@
 <!-- Navigation Section -->
 
 <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-    <div class="container">
+    <div class="container" >
 
         <!-- navbar header -->
         <div class="navbar-header">
