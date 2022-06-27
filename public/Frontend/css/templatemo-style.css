@@ -900,13 +900,13 @@ footer {
 }
 
 .social-icon .fa-github:hover {
-    background-color: #0077b5 !important;
+    background-color: #6e5494 !important;
     color: white;
     border-color: white;
 }
 
-.social-icon .fa-github {
-    background: none;r: #ffffff;
+.social-icon .fa-linkedin {
+    background: none;
     color: #0077b5;
     transform: scale(1.1);
 }

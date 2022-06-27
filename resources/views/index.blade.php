@@ -8,6 +8,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/Favicon.png') }}">
 
     <title>Fifty Shades of Code</title>
     <link rel="stylesheet" href="{{ asset('Frontend/css/bootstrap.min.css') }}">
