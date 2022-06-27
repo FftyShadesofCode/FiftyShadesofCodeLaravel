@@ -69,7 +69,9 @@
         <div class="row">
 
             <div class="col-md-6 col-sm-6">
-                <div class="home-img"></div>
+                <div class="home-img">
+                    <img src="{{ asset('../../assets/Logo.gif') }}" alt="Dragon with Neck Tie" />
+                </div>
             </div>
 
             <div class="col-md-6 col-sm-6">
@@ -148,7 +150,7 @@
                 <div class="wow fadeInUp service-thumb" data-wow-delay="0.8s">
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="75" height="75" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path fill="#bfbebe" d="M39.568 47.4H24.251c.357 0 .645 3.511.645 7.836c0 4.328-.287 7.839-.645 7.839h15.317c-.356 0-.645-3.511-.645-7.839c.002-4.325.289-7.836.645-7.836"/><path fill="#aeaeae" d="M29.615 47.4h-5.363c.357 0 .645 3.511.645 7.836c0 4.328-.287 7.839-.645 7.839h5.363c.357 0 .645-3.511.645-7.839c0-4.325-.288-7.836-.645-7.836"/><path fill="#d1d2d2" d="M63.784 47.31c0 4.047-3.05 7.326-6.806 7.326H6.848c-3.76 0-6.809-3.279-6.809-7.326V10.19c0-4.04 3.049-7.321 6.809-7.321h50.13c3.756 0 6.806 3.278 6.806 7.321v37.12"/><path fill="#c6c5c5" d="M12.93 47.31V10.19c0-4.04 3.049-7.321 6.808-7.321H6.844c-3.76 0-6.809 3.278-6.809 7.321v37.12c0 4.047 3.049 7.326 6.809 7.326h12.894c-3.759 0-6.808-3.28-6.808-7.327"/><g fill="#243438"><path d="M63.784 36.941c0 4.04-3.05 7.32-6.806 7.32H6.848c-3.76 0-6.809-3.277-6.809-7.32V10.163c0-4.047 3.049-7.325 6.809-7.325h50.13c3.756 0 6.806 3.278 6.806 7.325v26.778"/><path d="M.036 35.05h63.749v11.367H.036z"/></g><path fill="#58c5e8" d="M58.75 6.244H5.069c-.443 0-.812.245-.812.54v34.891c0 .296.369.54.812.54H58.75c.241 0 .424-.051.557-.141l.02-.02s.016-.012.02-.023a.414.414 0 0 0 .223-.356V6.791c-.004-.295-.377-.54-.82-.54"/><path fill="#28a6de" d="M32.698 29.559c8.976 5.378 17.745 9.04 26.868 11.255V6.784c0-.295-.373-.54-.816-.54H9.49c5.06 9.535 13.768 17.66 23.21 23.315m.07 5.711C21.94 29.371 11.097 21.2 4.257 11.11v30.564c0 .296.369.54.812.54h43.813c-5.352-1.725-10.689-3.986-16.11-6.94"/><path fill="#d1d2d2" d="M43.721 62.727c0 .702-.338 1.273-.753 1.273h-22.11c-.419 0-.757-.571-.757-1.273c0-.703.338-1.273.757-1.273h22.11c.415-.003.753.569.753 1.273"/><path fill="#c6c5c5" d="M27.937 62.727c0-.703.338-1.273.753-1.273h-8.125c-.416 0-.753.57-.753 1.273c0 .702.338 1.273.753 1.273h8.125c-.415 0-.753-.571-.753-1.273"/><path fill="#243438" d="M34.33 48.615c-.098-.094-.241-.121-.436-.065l-1.123.287c-.35.095-.527.326-.527.698l-.004 1.201c0 .174.039.303.117.377a.335.335 0 0 0 .249.093c.06 0 .116-.013.188-.027l1.122-.286c.35-.094.528-.326.532-.703v-1.197c-.003-.177-.042-.304-.118-.378m-.596 1.367c0 .133-.062.215-.189.25l-.398.104a.436.436 0 0 1-.066.008a.138.138 0 0 1-.09-.031c-.026-.025-.043-.072-.038-.14v-.427c0-.133.062-.215.187-.249l.403-.104c.069-.016.121-.008.151.023c.03.027.043.072.043.136v.431h-.003zm-2.154-.452c0-.372-.175-.604-.528-.698l-1.122-.287c-.194-.056-.338-.026-.431.065c-.082.074-.121.201-.121.377l.004 1.195c.004.377.179.61.528.703l1.126.287c.066.02.128.027.182.027a.33.33 0 0 0 .249-.094c.078-.073.117-.201.117-.377l-.004-1.198m-.746.778c-.02.021-.05.031-.089.031c0 0-.043-.004-.066-.008l-.4-.104c-.124-.035-.19-.117-.19-.25v-.431c0-.062.016-.108.042-.136c.031-.031.082-.039.155-.023l.4.104c.124.034.19.116.19.249v.431c0 .062 0 .109-.042.137m1.535 2.301c.02 0 .039-.004.066-.013l.4-.103c.124-.029.19-.115.19-.252v-.426a.236.236 0 0 0-.039-.138c-.035-.034-.09-.038-.155-.021l-.404.103c-.124.031-.187.116-.187.252l-.004.429c0 .062.016.104.043.131c.02.026.051.038.09.038m-.913 0a.209.209 0 0 1-.07-.013l-.4-.103c-.124-.029-.187-.115-.187-.252l-.004-.426c0-.063.016-.105.043-.138c.031-.034.085-.038.151-.021l.408.103c.121.031.187.116.187.252v.429c0 .062-.016.104-.039.131a.114.114 0 0 1-.089.038"/></svg>
                     <h3>Interface Design</h3>
-                    <p>Designing User Interfaces for Machines and Software, such as Computers, Home Appliances, Mobile Devices, and Other Electronic Devices, With the Focus on Maximizing Usability and the User Experience</p>
+                    <p>Designing User Interfaces<br/>for Machines and Software, such as Computers,<br/>Home Appliances, Mobile Devices, and Other<br/>Electronic Devices, With the Focus on<br/>Maximizing Usability and the User Experience</p>
                 </div>
             </div>
 
@@ -164,7 +166,7 @@
                 <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="75" height="75" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><g fill="#616161"><path d="m29.175 31.99l2.828-2.827l12.019 12.019l-2.828 2.827z"/><circle cx="20" cy="20" r="16"/></g><path fill="#37474F" d="m32.45 35.34l2.827-2.828l8.696 8.696l-2.828 2.828z"/><circle cx="20" cy="20" r="13" fill="#64B5F6"/><path fill="#BBDEFB" d="M26.9 14.2c-1.7-2-4.2-3.2-6.9-3.2s-5.2 1.2-6.9 3.2c-.4.4-.3 1.1.1 1.4c.4.4 1.1.3 1.4-.1C16 13.9 17.9 13 20 13s4 .9 5.4 2.5c.2.2.5.4.8.4c.2 0 .5-.1.6-.2c.4-.4.4-1.1.1-1.5z"/></svg>
                     <h3>SEO</h3>
-                    <p class="color-white">Literally stands for 'Search Engine Optimization, it is Improving the Quality and Quantity of Website Traffic to a Website or Web Page from Search Engines, SEO Targets Unpaid Traffic Rather Than Direct Traffic or Paid Traffic.</p>
+                    <p class="color-white">Literally stands for 'Search Engine Optimization',<br/>it is Improving the Quality and Quantity of Website Traffic to a Website or Web Page from Search Engines, SEO Targets Unpaid Traffic Rather Than<br/>Direct Traffic or Paid Traffic.</p>
                 </div>
             </div>
 
@@ -172,7 +174,7 @@
                 <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="75" height="75" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke-dasharray="64" stroke-dashoffset="64" stroke-width="2" d="M13 3L19 9V21H5V3H13"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M12.5 3V8.5H19"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="14;0"/></path><g stroke-dasharray="8" stroke-dashoffset="8" stroke-width="2"><path d="M10 13L8 15L10 17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.2s" values="8;0"/></path><path d="M14 13L16 15L14 17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1.2s" dur="0.2s" values="8;0"/></path></g></g></svg>
                     <h3>Coding</h3>
-                    <p>Computation Written in a Source Code, Using One or More Languages that are Intelligible to Programmers. Coding Summed Up is Providing the Software with a Set of Instructions to Operate the Machine for Which it is Programmed</p>
+                    <p>Computation Written in a Source Code,<br/>Using One or More Languages that are Intelligible<br/>to Programmers. Coding Summed Up is<br/>Providing the Software with a Set of Instructions to<br/>Operate the Machine for Which it is Programmed</p>
                 </div>
             </div>
 
@@ -559,7 +561,7 @@
                 <div class="contact-form">
                     <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
                         <h1 class="color-white">Contact Me</h1>
-                        <p class="color-white">Use the Form Below or Email me at <a href="mailto:philiprmcdavid@gmail.com">philiprmcdavid@gmail.com</a></p>
+                        <p class="color-white">Use the Form Below or Email me at: <a href="mailto:philiprmcdavid@gmail.com"> philiprmcdavid@gmail.com</a></p>
                     </div>
 
                     <div id="contact-form">
