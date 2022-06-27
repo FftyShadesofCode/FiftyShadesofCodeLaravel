@@ -15,6 +15,9 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         Schema::defaultStringLength(500);
+        if($this->app->environment('production')) {
+            URL::forceScheme('https');
+        }
     }
 
     /**
