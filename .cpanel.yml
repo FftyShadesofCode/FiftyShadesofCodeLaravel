@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/USER/public_html/FiftyShadesofCode
+      - export REPOPATH=/home/USER/repositories/FiftyShadesofCodeLaravel
