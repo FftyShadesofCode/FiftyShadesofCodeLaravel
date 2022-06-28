@@ -184,14 +184,14 @@ html{
 }
 
 a {
-  color: #7de7d6;
+  color: #0a6830;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #0fdc87;
+  color: #0a66c2;
   outline: none;
 }
 
@@ -390,7 +390,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #about .about-img {
-    background: url('./public/assets/Philip1.jpg') no-repeat center;
+    background: url('../../assets/Philip1.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -662,7 +662,7 @@ a:hover, a:active, a:focus {
     height: 22vh;
     width: 20vw;
     background-size: contain;
-    background: url('./public/assets/works/FrameofLightDesigns.png') no-repeat center;
+    background: url('../../assets/works/FrameofLightDesigns.png') no-repeat center;
     justify-items: center;
 }
 
@@ -670,7 +670,7 @@ a:hover, a:active, a:focus {
     height: 22vh;
     width: 20vw;
     background-size: contain;
-    background: url('./public/assets/works/PositiveMasculinityNow.png') no-repeat center;
+    background: url('../../assets/works/PositiveMasculinityNow.png') no-repeat center;
     justify-items: center;
 }
 
@@ -686,7 +686,7 @@ a:hover, a:active, a:focus {
     height: 22vh;
     width: 20vw;
     background-size: contain;
-    background: url('./public/assets/works/TheAwesomeHairLab.png') no-repeat center;
+    background: url('../../assets/works/TheAwesomeHairLab.png') no-repeat center;
     justify-items: center;
 }
 
@@ -694,7 +694,7 @@ a:hover, a:active, a:focus {
     height: 22vh;
     width: 20vw;
     background-size: contain;
-    background: url('./public/assets/works/GreenMountainHashCo.png') no-repeat center;
+    background: url('../../assets/works/GreenMountainHashCo.png') no-repeat center;
     justify-items: center;
 }
 
@@ -702,7 +702,7 @@ a:hover, a:active, a:focus {
     height: 22vh;
     width: 20vw;
     background-size: contain;
-    background: url('./public/assets/works/ASWMechanical.png') no-repeat center;
+    background: url('../../assets/works/ASWMechanical.png') no-repeat center;
     justify-items: center;
 }
 
@@ -710,7 +710,7 @@ a:hover, a:active, a:focus {
     height: 22vh;
     width: 20vw;
     background-size: contain;
-    background: url('./public/assets/works/UnderdogDevs.png') no-repeat center;
+    background: url('../../assets/works/UnderdogDevs.png') no-repeat center;
     justify-items: center;
 }
 
@@ -718,7 +718,7 @@ a:hover, a:active, a:focus {
     height: 22vh;
     width: 20vw;
     background-size: contain;
-    background: url('./public/assets/works/BattleshipAPI-600x500.png') no-repeat center;
+    background: url('../../assets/works/BattleshipAPI-600x500.png') no-repeat center;
     justify-items: center;
 }
 
@@ -755,18 +755,7 @@ a:hover, a:active, a:focus {
 }
 
 .work-btns {
-    margin: 2rem 0;
-}
-
-.work-btns .work-btn {
-    margin: 0 2rem;
-    font-size: 2rem;
-    width: 4vw;
-}
-
-.work-btn button {
-    border: 5px #00591a;
-    background-color: #f8fffb;
+    margin: -5rem 0;
 }
 
     /*---------------------------------------

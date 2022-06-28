@@ -12,10 +12,10 @@
     <link rel="icon" type="image/x-icon" href="public/Favicon.png">
 
     <title>Fifty Shades of Code</title>
-    <link rel="stylesheet" href="{{ secure_asset('Frontend/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('Frontend/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('Frontend/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('Frontend/css/templatemo-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('Frontend/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('Frontend/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('Frontend/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('Frontend/css/templatemo-style.css') }}">
 
     <link href="{{ URL::asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700') }}" rel="stylesheet">
 
@@ -45,7 +45,7 @@
                 <span class="icon icon-bar"></span>
             </button>
             <a href="#" class="navbar-brand">
-                <img src="./public/assets/FiftyShadesofCode.png" alt="Fifty Shades of Code text" />
+                <img src="{{ asset('assets/FiftyShadesofCode.png') }}" alt="Fifty Shades of Code text" />
             </a>
         </div>
 
@@ -72,7 +72,7 @@
 
             <div class="col-md-6 col-sm-6">
                 <div class="home-img">
-                    <img src="./public/assets/Logo.gif" alt="Dragon with Neck Tie" />
+                    <img src="{{ asset('../../assets/Logo.gif') }}" alt="Dragon with Neck Tie" />
                 </div>
             </div>
 
@@ -81,7 +81,7 @@
                     <div class="section-title">
                         <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to Fifty Shades of Code</h4>
                         <h2 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Philip R. McDavid</strong><br />currently based in Upstate New York.</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.9s">I am a recent bootcamp graduate, making it my 8th degree/certification! I hold degrees/certifications in Floral Design, Photography, Videography, Web Design, Business, Fitness and Nutrition,<br />Graphic Design, and now Full Stack Development, or Software Engineering.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.9s">I am a recent bootcamp graduate, making it my 8th degree/certification!<br/>I hold degrees/certifications in Floral Design, Photography, Videography, Web Design,<br/>Business, Fitness and Nutrition, Graphic Design, and now Full Stack Development, or Software Engineering.</p>
 
                         <a href="#skills" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">My Skills</a>
 
@@ -446,7 +446,7 @@
                         </h2>
                         <div class="work-btns">
                             <a href="https://www.frameoflightdesigns.com" target="_blank">
-                                <button class=" work-btn">Site</button>
+                                <button class="section-btn btn btn-success">Site</button>
                             </a>
                         </div>
                     </div>
@@ -459,7 +459,7 @@
                         </h2>
                         <div class="work-btns">
                             <a href="https://www.positivemasculinitynow.org" target="_blank">
-                                <button class=" work-btn">Site</button>
+                                <button class="section-btn btn btn-success work-btn">Site</button>
                             </a>
                         </div>
                     </div>
@@ -472,7 +472,7 @@
                         </h2>
                         <div class="work-btns">
                             <a href="https://www.nenyosorchids.com" target="_blank">
-                                <button class=" work-btn">Site</button>
+                                <button class="section-btn btn btn-success work-btn">Site</button>
                             </a>
                         </div>
                     </div>
@@ -485,7 +485,7 @@
                         </h2>
                         <div class="work-btns">
                             <a href="https://www.theawesomehairlab.com" target="_blank">
-                                <button class=" work-btn">Site</button>
+                                <button class="section-btn btn btn-success work-btn">Site</button>
                             </a>
                         </div>
                     </div>
@@ -498,7 +498,7 @@
                         </h2>
                         <div class="work-btns">
                             <a href="https://www.greenmountainhashco.com" target="_blank">
-                                <button class=" work-btn">Site</button>
+                                <button class="section-btn btn btn-success work-btn">Site</button>
                             </a>
                         </div>
                     </div>
@@ -511,7 +511,7 @@
                         </h2>
                         <div class="work-btns">
                             <a href="https://github.com/FftyShadesofCode/ASWMechanical" target="_blank">
-                                <button class=" work-btn">Code</button>
+                                <button class="section-btn btn btn-success work-btn">Code</button>
                             </a>
                         </div>
                     </div>
@@ -524,10 +524,10 @@
                         </h2>
                         <div class="work-btns">
                             <a href="https://www.underdogdevs.com" target="_blank">
-                                <button class=" work-btn">Site</button>
+                                <button class="section-btn btn btn-success work-btn">Site</button>
                             </a>
                             <a href="https://github.com/BloomTech-Labs/underdog-devs-fe-a" target="_blank">
-                                <button class=" work-btn">Code</button>
+                                <button class="section-btn btn btn-success work-btn">Code</button>
                             </a>
                         </div>
                     </div>
@@ -540,7 +540,7 @@
                         </h2>
                         <div class="work-btns">
                             <a href="https://github.com/org1223" target="_blank">
-                                <button class=" work-btn">Code</button>
+                                <button class="section-btn btn btn-success work-btn">Code</button>
                             </a>
                         </div>
                     </div>
@@ -637,12 +637,12 @@
 
 <!-- SCRIPTS -->
 
-<script src="{{ secure_asset('Frontend/js/jquery.js') }}"></script>
-<script src="{{ secure_asset('Frontend/js/bootstrap.min.js') }}"></script>
-<script src="{{ secure_asset('Frontend/js/jquery.parallax.js') }}"></script>
-<script src="{{ secure_asset('Frontend/js/smoothscroll.js') }}"></script>
-<script src="{{ secure_asset('Frontend/js/wow.min.js') }}"></script>
-<script src="{{ secure_asset('Frontend/js/custom.js') }}"></script>
+<script src="{{ asset('/Frontend/js/jquery.js') }}"></script>
+<script src="{{ asset('/Frontend/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('/Frontend/js/jquery.parallax.js') }}"></script>
+<script src="{{ asset('/Frontend/js/smoothscroll.js') }}"></script>
+<script src="{{ asset('/Frontend/js/wow.min.js') }}"></script>
+<script src="{{ asset('/Frontend/js/custom.js') }}"></script>
 
 </body>
 </html>
