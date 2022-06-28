@@ -72,7 +72,7 @@
 
             <div class="col-md-6 col-sm-6">
                 <div class="home-img">
-                    <img src="{{ asset('public/imgs/Logo.gif') }}" alt="Dragon with Neck Tie" />
+                    <img src="{{ asset('imgs/Logo.gif') }}" alt="Dragon with Neck Tie" />
                 </div>
             </div>
 
