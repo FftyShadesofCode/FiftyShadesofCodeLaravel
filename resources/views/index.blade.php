@@ -45,7 +45,7 @@
                 <span class="icon icon-bar"></span>
             </button>
             <a href="#" class="navbar-brand">
-                <img src="{{ asset('assets/FiftyShadesofCode.png') }}" alt="Fifty Shades of Code text" />
+                <img src="{{ url('assets/FiftyShadesofCode.png') }}" alt="Fifty Shades of Code text" />
             </a>
         </div>
 
@@ -72,7 +72,7 @@
 
             <div class="col-md-6 col-sm-6">
                 <div class="home-img">
-                    <img src="{{ asset('../../assets/Logo.gif') }}" alt="Dragon with Neck Tie" />
+                    <img src="{{ url('../../assets/Logo.gif') }}" alt="Dragon with Neck Tie" />
                 </div>
             </div>
 
